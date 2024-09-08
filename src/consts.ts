@@ -23,7 +23,8 @@ export const siteConfig: Config = {
   lang: "en-US",
   profile: {
     author: "Derrick Dryer",
-    description: "Work in progress",
+    description:
+      "Developing IT Professional | University Student | Bachelors of Science in Computer Information Systems | Class of 2025",
   },
 };
 
