@@ -8,24 +8,24 @@ type Config = {
   profile: {
     author: string;
     description?: string;
-  }
-}
+  };
+};
 
 type SocialLink = {
   icon: string;
   friendlyName: string; // for accessibility
   link: string;
-}
+};
 
 export const siteConfig: Config = {
-  title: "Astro Theme Cody",
+  title: "Derrick Dryer",
   description: "",
-  lang: "en-GB",
+  lang: "en-US",
   profile: {
-    author: "Amy Dang",
-    description: "your bio description"
-  }
-}
+    author: "Derrick Dryer",
+    description: "Work in progress",
+  },
+};
 
 /** 
   These are you social media links. 
@@ -36,26 +36,26 @@ export const socialLinks: Array<SocialLink> = [
   {
     icon: "mdi:github",
     friendlyName: "Github",
-    link: "https://github.com/kirontoo/astro-theme-cody",
+    link: "https://github.com/derrickdryer",
   },
   {
     icon: "mdi:linkedin",
     friendlyName: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/ddryer007",
   },
   {
     icon: "mdi:email",
     friendlyName: "email",
-    link: "mailto:ndangamy@gmail.com",
+    link: "mailto:contact@derrickdryer.com",
   },
   {
     icon: "mdi:rss",
     friendlyName: "rss",
-    link: "/rss.xml"
-  }
+    link: "/rss.xml",
+  },
 ];
 
-export const NAV_LINKS: Array<{ title: string, path: string }> = [
+export const NAV_LINKS: Array<{ title: string; path: string }> = [
   {
     title: "Home",
     path: "/",
@@ -70,10 +70,10 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
   },
   {
     title: "Projects",
-    path: '/projects'
+    path: "/projects",
   },
   {
     title: "Archive",
-    path: '/archive'
-  }
+    path: "/archive",
+  },
 ];
