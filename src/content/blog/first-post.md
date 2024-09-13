@@ -15,7 +15,7 @@ tags:
     "github",
     "github pages",
   ]
-order: 1
+order: 2
 ---
 
 First off, thank you for visiting my blog! I hope you'll stick around and follow my journey as I continue growing in the IT field, diving deeper into my passion for self-hosting and learning along the way.
