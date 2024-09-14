@@ -3,7 +3,7 @@ title: "Senior Capstone"
 description: "Capstone project for gaining Bachelors on Science in Computer Information Systems at Pennsylvania Western University"
 pubDate: "Sept 9 2024"
 platform: Website
-stack: ["Node", "Docker"]
+stack: ["Node", "Docker", "AWS", "db", "npm"]
 website: https://github.com/derrickdryer/senior-capstone
 github: https://github.com/derrickdryer/senior-capstone
 order: 1
@@ -27,4 +27,5 @@ This project will be updated on github fairly regularly additionally I will be p
 
 - **8/26/24** - First day of Senior Capstone I course. This course is primarily about the technical writing aspect of the project such as Data Flow Diagrams (DFDs), Database Modeling, Documentation, Business Case, etc. | Github repo was created with general name of senior-capstone.
 - **8/28/24** - Team members all agreed on a project idea. Ours being a Realtor Company website.
-- _9/9/2024_ - Not a key date, but this is when I decided to track the project on my portfolio/blog. 😁
+- 9/9/2024 - Not a key date, but this is when I decided to track the project on my portfolio/blog. 😁
+- 9/14/2024 - Completed team contract and posted it to testing branch for team review and discussion. Kolson worked to get an AWS Database setup for testing and production purposes. I will need to figure out a way to add docker environment variables in order to connect to it, check out my [Learning Docker](https://www.derrickdryer.xyz/blog/learning-docker/) post.
