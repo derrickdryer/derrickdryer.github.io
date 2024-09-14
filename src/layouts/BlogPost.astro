@@ -8,6 +8,7 @@ import BackToTopBtn from '@/components/BackToTopBtn';
 import CopyBtn from '@/components/CopyBtn';
 import { Icon } from 'astro-icon';
 import { siteConfig } from '../consts';
+import PostComments from '@/components/PostComments';
 
 interface Props {
 	post: CollectionEntry<"blog">;
@@ -91,6 +92,8 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 			<slot />
 		</main>
 		<BackToTopBtn/>
+    <br>
+    <PostComments />
 	</article>
 	<aside slot="sidebar" class="hidden sm:block">
 		<div class="flex flex-col space-y-2">
