@@ -6,7 +6,6 @@ heroImage:
   src: "/docker.jpg"
   alt: "Docker"
 tags: ["docker", "Nigel Poulton", "learning", "Docker Deep Dive"]
-order: 1
 ---
 
 Picking up a new technology, language or really anything can be hard, most of the time I have found I'm just not learning in the best way for me. In this post I talk about my current journey in learning docker.
