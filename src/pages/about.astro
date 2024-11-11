@@ -1,13 +1,38 @@
 ---
 import Layout from '../layouts/Base.astro';
+import SocialMediaLinks from '@/components/SocialMediaLinks';
 ---
 
 <Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	image="/blog-placeholder-about.jpg"
+    title="About Me"
+    description="Learn more about me and my journey"
+    image="/home-lab.jpg"
 >
-	<h1 class="title">About Me</h1>
-	<p>This page is still a work in progress. Check back later.</p>
+    <section class="prose-cody">
+        <h1 class="title">About Me</h1>
+        <p class="mb-4 sm:mb-8">Hello! I'm Derrick Dryer, a passitonate technology enthusiast. Welcome to my personal blog where I share my journey, projects, and insights into the world of technology.</p>
+        
+        <h2 class="title">My Journey</h2>
+        <p class="mb-4 sm:mb-8">I started my journey when I was young and got my first video game system, the Playstation or was it the gameboy. Either way, I have always had a passion for technology and have built many computers for personal use and for others. Over time I began to want to explore enterprise and open-source technology and begun my own home-lab and even started to learn how to better my home networking.</p>
+        
+        <h2 class="title">Skills and Expertise</h2>
+        <ul class="mb-4 sm:mb-8">
+			<li>Home Lab: Virtualization with Proxmox, Docker containers, and various VMs.</li>
+			<li>Networking: Setting up and managing home networks, including routers, switches, and firewalls.</li>
+			<li>Hardware: Building and maintaining custom PCs, NAS systems, and other hardware projects.</li>
+			<li>Automation: Using tools like Ansible to automate home lab setups and configurations.</li>
+			<li>Development: Python, SQL, HTML, CSS, JavaScript, Java, & YAML (I am no expert here at all, I just try my best.)</li>
+        </ul>
+        
+        <h2 class="title">Projects</h2>
+        <p class="mb-4 sm:mb-8">I've worked on various projects ranging from web development to cloud computing. You can check out some of my projects on my <a href="https://github.com/derrickdryer" class="cody-link">GitHub</a>.</p>
+        
+        <h2 class="title">Get in Touch</h2>
+		<p class="mb-4 sm:mb-8">If you'd like to connect, feel free to reach out to me on social media or send me an email at <a href="mailto:contact@derrickdryer.xyz" class="cody-link">contact@derrickdryer.xyz</a>.</p>
+        
+        <div>
+            <span>You can find me on: </span>
+            <SocialMediaLinks />
+        </div>
+    </section>
 </Layout>
-
