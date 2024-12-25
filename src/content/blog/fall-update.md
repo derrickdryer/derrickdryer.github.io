@@ -6,7 +6,7 @@ heroImage:
   src: "/busy.jpg"
   alt: "Busy"
 tags: ["update"]
-order: 2
+order: 3
 ---
 
 ## A Bit of a Busy Season

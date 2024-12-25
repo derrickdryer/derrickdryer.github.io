@@ -6,7 +6,6 @@ heroImage:
   src: "/tux.jpg"
   alt: "Wallpaper by peterson from Wallpapers.com "
 tags: ["linux", "learning"]
-order: 3
 ---
 
 When I was in high school, I couldn’t stand learning. Like most teenagers, I thought I already knew everything I needed to get by. Schools had this tendency to teach from textbooks that were way out of date, and honestly, a lot of them still do.
