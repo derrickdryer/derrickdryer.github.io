@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn: "https://cdn.derrickdryer.xyz"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "https://cdn.derrickdryer.xyz/derrickdryer_avatar.png"
+avatar: "/derrickdryer_avatar.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
