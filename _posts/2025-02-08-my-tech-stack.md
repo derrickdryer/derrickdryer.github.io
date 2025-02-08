@@ -1,6 +1,6 @@
 ---
 title: "My Tech Stack"
-date: 2025-02-07 11:59:00 -0500
+date: 2025-02-08 02:01:00 -0500
 author_id: derrick_dryer
 categories: [Projects, Homelab]
 tags:
