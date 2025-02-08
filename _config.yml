@@ -61,7 +61,7 @@ analytics:
   google:
     id: # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: derrickdryer
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -69,13 +69,14 @@ analytics:
     id: # fill in your Matomo ID
     domain: # fill in your Matomo domain
   cloudflare:
-    id: # fill in your Cloudflare Web Analytics token
+    id: NJVRQ6_3wFCmhWO6VJe63aZxnF3vWnV3lPpzVz3B
   fathom:
     id: # fill in your Fathom Site ID
 
 # Page views settings
+
 pageviews:
-  provider: # now only supports 'goatcounter'
+  provider: goatcounter # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
 #
@@ -95,10 +96,10 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://cdn.derrickdryer.xyz"
+cdn: # "https://cdn.derrickdryer.xyz"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/derrickdryer_avatar.png"
+avatar: "/assets/derrickdryer_avatar.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

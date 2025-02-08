@@ -10,13 +10,16 @@ tags:
     - CI/CD
     - mariadb
 description: "About my senior capstone project"
-media_subpath: /senior-capstone
-image: programming.png
+media_subpath: /assets/senior-capstone/
+image:
+  path: /programming.png
+  alt: Royal free image because I'm lazy
 toc: true
 comments: true
 ---
-<center><img src="/programming.png" alt="Coding image">
-Image by <a href="https://pixabay.com/users/boskampi-3788146/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">Boskampi</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">Pixabay</a></center>
+
+*See attribution at the end of the post[^attribution]*
+
 
 ## What is a Senior Capstone?
 
@@ -43,10 +46,10 @@ So far, we have:
 
 ## CI/CD: Continuous Integration & Deployment
 
-<figure>
-<img src="/ci-cd.png" alt="CI/CD Workflow Diagram">
-<figcaption>Fig-1. CI/CD Workflow automatically triggered on updates to the master branch.</figcaption>
-</figure>
+
+![CI/CD Workflow Diagram](/ci-cd.png)
+_Fig-1. CI/CD Workflow automatically triggered on updates to the master branch._
+
 
 Deployment is **by far my favorite part** of this project. It took me several days of testing to get everything working smoothly. Now, the entire workflow—from pushing an update to deployment—is **fully automated**.
 
@@ -89,4 +92,4 @@ Feel free to follow our project on github: [derrickdryer/senior-capstone](https:
 
 Thanks for reading!
 
-Image by <a href="https://pixabay.com/users/boskampi-3788146/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">Boskampi</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854">Pixabay</a>
+[^attribution]: Image by [Boskampi](https://pixabay.com/users/boskampi-3788146/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854)
