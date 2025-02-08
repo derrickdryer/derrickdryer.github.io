@@ -1,6 +1,6 @@
 ---
 title:  "Senior Capstone"
-date:   2025-02-05 12:31:00 +0700
+date:   2025-02-05 12:31:00 -0500
 author_id: derrick_dryer
 categories: [Projects, University]
 tags:
@@ -13,13 +13,10 @@ description: "About my senior capstone project"
 media_subpath: /assets/senior-capstone/
 image:
   path: /programming.png
-  alt: Royal free image because I'm lazy
+  alt: https://pixabay.com/illustrations/computer-computer-code-programming-1836330/
 toc: true
 comments: true
 ---
-
-*See attribution at the end of the post[^attribution]*
-
 
 ## What is a Senior Capstone?
 
@@ -91,5 +88,3 @@ Our project runs until **late April**, and we have a lot to finish before presen
 Feel free to follow our project on github: [derrickdryer/senior-capstone](https://github.com/derrickdryer/senior-capstone)
 
 Thanks for reading!
-
-[^attribution]: Image by [Boskampi](https://pixabay.com/users/boskampi-3788146/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854) from [Pixabay](https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1873854)
