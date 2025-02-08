@@ -41,7 +41,7 @@ _A diagram of my tech stack, made in Draw.io._
 ### Core Components:
 1. **Pi-hole + Recursive DNS Resolver:**  
    - Each node runs Pi-hole, syncing via `rsync`.  
-   - I forked [this script](pihole-rsync-keyfile) to use an identity file for secure SSH-based syncing.  
+   - I forked [this script](https://github.com/derrickdryer/pihole-rsync-keyfile) to use an identity file for secure SSH-based syncing.  
    - This setup ensures all local hosts can be resolved via A records.
 
 2. **Nginx Reverse Proxy + Cloudflare DNS:**  
