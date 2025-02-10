@@ -1,0 +1,21 @@
+- institution: "Pennsylvania Western University"
+  degree: "Bachelor of Science in Computer Information Systems"
+  start_date: "August 2021"
+  end_date: "May 2025"
+  gpa: "3.9"
+  scale: "4.0"
+  relevant_courses:
+    - Cisco CCNA I
+    - Introduction to Information Systems
+    - Application Programming I/II
+    - Systems Anaysis and Design
+    - Systems Project Management
+    - Database Design and Management
+    - Database Programming
+    - Web Programming I/II
+    - Python
+    - CIS Internship
+    - COBOL
+    - ERP
+    - Senior Capstone I/II
+    - Science & Technical Writing

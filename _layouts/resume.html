@@ -1,0 +1,193 @@
+---
+layout: default
+---
+<div class="resume">
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.tagline }}</p>
+  </header>
+
+  <section class="contact-info">
+    <h2>Contact Information</h2>
+    <div class="contact-columns">
+      <div class="contact-column">
+        <p>
+          Email: <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a>
+        </p>
+        <p>Phone: {{ site.social.phone }}</p>
+      </div>
+      <div class="contact-column">
+        <p>
+          LinkedIn: <a href="https://linkedin.com/in/{{ site.linkedin.username }}">{{ site.linkedin.username }}</a>
+        </p>
+        <p>
+          GitHub: <a href="https://github.com/{{ site.github.username }}">{{ site.github.username }}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .contact-columns {
+      display: flex;
+      justify-content: space-between;
+    }
+    .contact-column {
+      flex: 1;
+      margin-right: 10px;
+    }
+    .contact-column:last-child {
+      margin-right: 0;
+    }
+  </style>
+
+  <section class="skills">
+    <h2>Featured Skills</h2>
+    <ul>
+      {% for skill in site.data.featured_skills %}
+        <li>
+          {{ skill.skill }}
+          <ul>
+            {% for example in skill.example %}
+              <li>{{ example }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Additional Skills</h2>
+    <div class="skills-columns">
+      {% assign skills_per_column = 3 %}
+      {% assign column_count = site.data.skills | size | divided_by: skills_per_column | ceil %}
+      {% for column in (1..column_count) %}
+        <div class="skills-column">
+          <ul>
+            {% assign start_index = skills_per_column | times: column | minus: skills_per_column %}
+            {% assign end_index = skills_per_column | times: column %}
+            {% for skill in site.data.skills %}
+              {% if forloop.index > start_index and forloop.index <= end_index %}
+                <li>{{ skill.skill }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <style>
+    .skills-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .skills-column {
+      flex: 1;
+      margin-right: 10px;
+    }
+    .skills-column:last-child {
+      margin-right: 0;
+    }
+  </style>
+
+  <section class="experience">
+    <h2>Experience</h2>
+    {% for job in site.data.jobs %}
+      <div class="job">
+        <h3>{{ job.title }} - {{ job.company }}</h3>
+        <h4>{{ job.area }}</h4>
+        <p>{{ job.start_date }} - {{ job.end_date }}</p>
+        <ul>
+          {% for responsibility in job.responsibilities %}
+            <li>{{ responsibility }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    {% for education in site.data.education %}
+      <div class="education-item">
+        <h3>{{ education.institution }}</h3>
+        <h4>{{ education.degree }}</h4>
+        <p>{{ education.start_date }} - {{ education.end_date }}</p>
+        <p>GPA: {{ education.gpa }}/{{ education.scale }}</p>
+        <div class="relevant-courses-columns">
+          {% assign courses_per_column = 3 %}
+          {% assign column_count = education.relevant_courses | size | divided_by: courses_per_column | ceil %}
+          <div class="relevant-courses-columns-inner">
+            {% for column in (1..column_count) %}
+              <div class="relevant-courses-column">
+                <ul>
+                  {% assign start_index = courses_per_column | times: column | minus: courses_per_column %}
+                  {% assign end_index = courses_per_column | times: column %}
+                  {% for course in education.relevant_courses %}
+                    {% if forloop.index > start_index and forloop.index <= end_index %}
+                      <li>{{ course }}</li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <style>
+    .relevant-courses-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .relevant-courses-columns-inner {
+      display: flex;
+      width: 100%;
+    }
+    .relevant-courses-column {
+      flex: 1;
+      margin-right: 10px;
+    }
+    .relevant-courses-column:last-child {
+      margin-right: 0;
+    }
+  </style>
+</div>
+
+<section class="download-resume">
+  <h2>Download Resume</h2>
+  <p>
+    <a href="{{ site.resume.federal}}" download>Download Federal Resume</a>
+  </p>
+  <p>
+    <a href="{{ site.resume.general }}" download>Download General Resume</a>
+  </p>
+</section>
+
+<style>
+  .resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .resume header {
+    text-align: center;
+  }
+  .resume section {
+    margin-bottom: 20px;
+  }
+  .resume h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  .resume .job,
+  .resume .education-item {
+    margin-bottom: 10px;
+  }
+</style>
