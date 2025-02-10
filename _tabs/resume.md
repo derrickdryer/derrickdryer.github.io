@@ -1,5 +1,5 @@
 ---
 layout: resume
 icon: fas fa-file
-order: 5
+order: 2
 ---

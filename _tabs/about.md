@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 1
 ---
 
 Hey there! I’m Derrick, an IT professional and military veteran passionate about networking, hardware, and system infrastructure. Originally from Monongahela, PA, I’m currently wrapping up my Bachelor of Science in Computer Information Systems at Pennsylvania Western University, California, PA (graduating May 2025).
